@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: security-application
+  datasource:
+    url: jdbc:postgresql://172.19.226.47:5432/securityApp
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: postgresql
+    properties:
+      hibernate:
+        '[format_sql]': true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
